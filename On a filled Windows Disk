@@ -1,0 +1,4 @@
+On a disk that already contains a Windows 10 system in working order there are a few steps needed to install OpenCore and MacOs so both of them can be selectable at boot:
+
+1-The first thing to do beforehand is to get the Windows UUID; it will be used to fill the SMUUID field in the PlatformInfo directory in config.plist. To get this info, boot into Windows, run the command prompt (Windows equivalent of terminal) with administrator privilege and type : wmic path win32_computersystemproduct get uuid. The result is like : 4D4D1234-1234-1234-1234-A1B23C456789.
+
